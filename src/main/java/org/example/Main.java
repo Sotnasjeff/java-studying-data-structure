@@ -11,11 +11,25 @@ import java.util.Stack;
 import java.util.TreeSet;
 import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
+import org.example.Tree.BinaryTree;
 
 
 public class Main {
     public static void main(String[] args) {
-        TreeSet();
+        BinaryTree tree = new BinaryTree();
+
+        tree.add(6);
+        tree.add(4);
+        tree.add(8);
+        tree.add(3);
+        tree.add(5);
+        tree.add(7);
+        tree.add(9);
+
+
+        System.out.println(tree.containsNode(6));
+        System.out.println(tree.containsNode(0));
+        tree.traversePostOrder(tree.root);
     }
 
     public static void Vector() {
@@ -74,7 +88,7 @@ public class Main {
         synchronized (list) {
             Iterator<String> iterator = list.iterator();
 
-            while(iterator.hasNext()){
+            while (iterator.hasNext()) {
                 System.out.println(iterator.next());
             }
         }
@@ -90,7 +104,7 @@ public class Main {
 
         Iterator<String> iterator = list.iterator();
 
-        while(iterator.hasNext()) {
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 
