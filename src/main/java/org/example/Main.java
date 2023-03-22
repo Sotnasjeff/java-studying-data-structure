@@ -11,11 +11,27 @@ import java.util.Stack;
 import java.util.TreeSet;
 import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
+import static org.example.LinkedList.insert;
+import static org.example.LinkedList.printList;
 import org.example.Tree.BinaryTree;
+
 
 
 public class Main {
     public static void main(String[] args) {
+        org.example.LinkedList list = new org.example.LinkedList();
+
+        list = insert(list, 1);
+        list = insert(list, 2);
+        list = insert(list, 3);
+        list = insert(list, 4);
+        list = insert(list, 5);
+        list = insert(list, 6);
+        list = insert(list, 7);
+        list = insert(list, 8);
+
+        printList(list);
+
         BinaryTree tree = new BinaryTree();
 
         tree.add(6);
