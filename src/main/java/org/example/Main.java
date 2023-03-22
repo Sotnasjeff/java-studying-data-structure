@@ -8,13 +8,14 @@ import java.util.List;
 import java.util.Queue;
 import java.util.Random;
 import java.util.Stack;
+import java.util.TreeSet;
 import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 
 public class Main {
     public static void main(String[] args) {
-
+        TreeSet();
     }
 
     public static void Vector() {
@@ -116,7 +117,23 @@ public class Main {
     }
 
     public static void TreeSet() {
-        
+        TreeSet tree = new TreeSet<>();
+
+        tree.add(2);
+        tree.add(5);
+        tree.add(9);
+
+        Iterator<Integer> iterator = tree.iterator();
+
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+
+        System.out.println(tree);
+        System.out.println(tree.pollFirst());
+        System.out.println(tree.pollLast());
+        System.out.println(tree.isEmpty());
+        System.out.println(tree);
     }
 
 }
